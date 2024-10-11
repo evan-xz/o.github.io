@@ -1,0 +1,164 @@
+.navbar {
+    background-color: rgb(255, 255, 255);
+    padding: 16px;
+}
+
+.navbar-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+.nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    background-color: white;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-toggle:focus + .nav-links,
+.nav-links:hover {
+    display: flex;
+}
+
+.nav-links li {
+    margin: 10px 0;
+}
+
+ul {
+    list-style: none;
+    display:flex;
+    gap: 20px;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited{
+    color: rgb(27, 2, 255);
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.nav-toggle {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+#container {
+    width: 80%;
+    display: flex;
+    margin:auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#text {
+
+}
+
+h3 {
+    font-size: 30px;
+    margin:0;
+}
+
+h1 {
+    font-size: 60px;
+    margin:0;
+}
+
+#shoes {
+    width: 80%;
+    margin: 100px auto;
+}
+
+#shoes-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.box {
+    width: 25%;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 0px;
+    border-radius: 10px;
+}
+
+h5 {
+    font-size: 24px;
+    padding: 10px;
+    margin: 0;
+}
+
+@media (max-width: 1334px){
+    #container {
+    width: 80%;
+    display: flex;
+    margin:auto;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+    #container h3 {
+        font-size: 28px;
+    }
+
+    #container h1 {
+        font-size: 36px;
+    }
+    
+    #container img {
+        width: 60%;
+    }
+    #shoes-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    gap: 50px;
+    }
+
+    .box {
+    width: 40%;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 0px;
+    border-radius: 10px;
+}
+}
