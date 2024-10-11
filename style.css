@@ -27,18 +27,6 @@
     color: black;
     font-size: 18px;
 }
-.nav-links {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    position: absolute;
-    top: 80px;
-    left: 0;
-    background-color: white;
-    padding: 1rem;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
 
 .nav-links li {
     margin: 10px 0;
@@ -149,6 +137,18 @@ h5 {
     padding: 10px;
     margin: 0px;
     border-radius: 10px;
+}
+
+.nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    background-color: white;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .nav-toggle {
