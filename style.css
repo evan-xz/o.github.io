@@ -39,10 +39,6 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.nav-toggle:focus + .nav-links,
-.nav-links:hover {
-    display: flex;
-}
 
 .nav-links li {
     margin: 10px 0;
@@ -61,20 +57,13 @@ a {
 }
 
 a:visited{
-    color: rgb(27, 2, 255);
+    color: rgb(0, 0, 0);
 }
 
 .nav-toggle {
     display: none;
 }
 
-.nav-toggle {
-    display: block;
-    background: none;
-    border: none;
-    font-size: 1.5rem;
-    cursor: pointer;
-}
 
 #container {
     width: 80%;
@@ -85,7 +74,7 @@ a:visited{
 }
 
 #text {
-
+    
 }
 
 h3 {
@@ -126,18 +115,18 @@ h5 {
 
 @media (max-width: 1334px){
     #container {
-    width: 80%;
-    display: flex;
-    margin:auto;
-    flex-direction: column-reverse;
-    justify-content: space-between;
-    align-items: center;
+        width: 80%;
+        display: flex;
+        margin:auto;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
     }
-
+    
     #container h3 {
         font-size: 28px;
     }
-
+    
     #container h1 {
         font-size: 36px;
     }
@@ -146,19 +135,32 @@ h5 {
         width: 60%;
     }
     #shoes-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
     margin: auto;
     gap: 50px;
-    }
+}
 
-    .box {
+.box {
     width: 40%;
     border: 1px solid black;
     padding: 10px;
     margin: 0px;
     border-radius: 10px;
+}
+
+.nav-toggle {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.nav-toggle:focus + .nav-links,
+.nav-links:hover {
+    display: flex;
 }
 }
